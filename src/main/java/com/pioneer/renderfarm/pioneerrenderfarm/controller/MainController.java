@@ -37,4 +37,11 @@ public class MainController {
 		// This returns a JSON or XML with the users
 		return userRepository.findAll();
 	}
+	
+	@GetMapping(path="/hello")
+	public String hello() {
+		// This returns a JSON or XML with the users
+		return "hello world";
+	}
+	
 }
