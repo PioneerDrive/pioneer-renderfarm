@@ -33,7 +33,7 @@ security:
       loginPath: /login
     client:
       accessTokenUri: http://localhost:8769/oauth/token
-      userAuthorizationUri: http://localhost:8769/oauth/authorize
+      userAuthorizationUri: /oauth/authorize
       clientId: bgonza
       clientSecret: pwd12345
     resource:
