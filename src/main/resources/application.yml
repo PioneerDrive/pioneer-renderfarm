@@ -24,3 +24,20 @@ management:
 logging:
   level:
     com.pioneer.renderfarm.pioneerrenderfarm: DEBUG
+    
+security:
+  basic:
+    enabled: true
+  oauth2:
+    sso:
+      loginPath: /login
+    client:
+      accessTokenUri: http://localhost:8769/oauth/token
+      userAuthorizationUri: /oauth/authorize
+      clientId: bgonza
+      clientSecret: pwd12345
+    resource:
+      jwt:
+        keyValue: "abc"
+      id: fooScope
+      serviceId: ${PREFIX:}resource     
